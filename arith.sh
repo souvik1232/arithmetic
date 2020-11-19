@@ -14,3 +14,10 @@ arith[1]=$calc2
 arith[2]=$calc3
 arith[3]=$calc4
 echo "Dictionary--->"${arith[@]}
+i=3
+while(( i >= 0 ))
+do
+	arr[i]=${arith[$i]}
+	(( i-- ))
+done
+echo "Array--->"${arr[@]}
