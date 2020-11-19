@@ -21,3 +21,17 @@ do
 	(( i-- ))
 done
 echo "Array--->"${arr[@]}
+temp=0
+for(( i = 0 ; i <= 3 ; i++ ))
+do
+	for(( j = $i ; j <= 3 ; j++ ))
+	do
+		if(( ${arr[$i]} < ${arr[$j]} ))
+		then
+			temp=${arr[$i]}
+			arr[$i]=${arr[$j]}
+			arr[$j]=$temp
+		fi
+	done
+done
+echo "Desceding Order--->" ${arr[@]}
