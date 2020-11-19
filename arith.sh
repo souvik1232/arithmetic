@@ -35,3 +35,8 @@ do
 	done
 done
 echo "Desceding Order--->" ${arr[@]}
+for(( k=3 ; k >= 0 ; k-- ))
+do
+	arr1[ (( l++ )) ]=${arr[$k]}
+done
+echo "Ascending Order--->" ${arr1[@]}
