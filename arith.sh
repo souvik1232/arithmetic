@@ -6,3 +6,5 @@ calc2=$(( ($a * $b) + $c ))
 echo $calc2
 calc3=$(( $c + ($a / $b) ))
 echo $calc3
+calc4=$(( ($a % $b) + $c ))
+echo $calc4
